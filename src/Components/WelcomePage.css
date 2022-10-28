@@ -1,0 +1,278 @@
+.welcomePdiv{
+    background-image: url("/public/focus7.jpg");
+    background-position: 10%;
+    color: white;
+    /* background-color: #282c34; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* display: none; */
+    /* opacity: 0; */
+}
+.welcomeAnimation{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #16191f;
+    z-index: -1;
+    animation: welcome 10s linear;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcomBox{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #0C5FB0;
+    background: linear-gradient(to right, #081929, #15171d);
+    /* background: linear-gradient(to right, #0C5FB0, #1C3627, #6808B7, #0262CC ); */
+}
+.welcomBox1{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    /* background-color: blue; */
+}
+.welcomeBox2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+.hand1{
+    position: absolute;
+    left: 60px;
+    top: 80px;
+    border-radius: 100%;
+    width: 30px;
+    height: 43px;
+    transform: rotate(-45deg);
+    background-color: #0262CC;
+    z-index: 5;
+}
+.hand1::after{
+    content: "";
+    height: 35px;
+    width: 15px;
+    background-color: #0C5FB0;
+    position: absolute;
+    top: -28px;
+    left: 5px;
+    border-radius: 10% 70% 50% 0%;
+}
+.hand2{
+    position: absolute;
+    left: 65px;
+    top: 70px;
+    border-radius: 100%;
+    width: 40px;
+    height: 50px;
+    transform: rotate(-25deg);
+    background-color: rgb(103, 156, 23);
+    z-index: 4;
+}
+.hand2::after{
+    content: "";
+    height: 60px;
+    width: 13px;
+    background-color: rgb(103, 156, 23);
+    position: absolute;
+    top: -48px;
+    left: 13px;
+    /* transform: rotate(0deg); */
+    border-radius: 10% 70% 50% 0%;
+}
+.hand3{
+    position: absolute;
+    left: 75px;
+    top: 63px;
+    border-radius: 100%;
+    width: 45px;
+    height: 55px;
+    transform: rotate(-12deg);
+    background-color: #074621;
+    z-index: 3;
+}
+.hand3::after{
+    content: "";
+    height: 65px;
+    width: 12px;
+    background-color: #074621;
+    position: absolute;
+    top: -58px;
+    left: 17px;
+    /* transform: rotate(0deg); */
+    border-radius: 10% 70% 50% 0%;
+}
+.hand4{
+    position: absolute;
+    left: 105px;
+    top: 23px;
+    border-radius: 10% 70% 50% 10%;
+    width: 11px;
+    height: 55px;
+    transform: rotate(12deg);
+    background-color: #1a70cc;
+    z-index: 2;
+}
+.hand5{
+    position: absolute;
+    left: 117px;
+    top: 50px;
+    border-radius: 10% 70% 50% 10%;
+    width: 10px;
+    height: 50px;
+    transform: rotate(35deg);
+    background-color: #1a70cc;
+    z-index: 1;
+}
+@keyframes welcome {
+   0%{
+      opacity: 1;
+      z-index: 1;
+   }
+   25%{
+    z-index: 1;
+    opacity: 1;
+   }
+   50%{
+    z-index: 1;
+    opacity: 1;
+   }
+   75%{
+    z-index: 1;
+     opacity: 0.1;
+   }
+   100%{
+    z-index: 1;
+    opacity: 0;
+   }
+}
+.WelcomePage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    /* opacii */
+}
+.welcome{
+    background: rgba(0, 0, 0, 0.911);
+    height: 100%;
+    margin-right: 3%;
+    line-height: 15px;
+    width: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logInBtn{
+    height: 35px;
+    width: 250px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.logInBtn:hover{
+    background-color: white;
+    color: black;
+    /* box-shadow: white 0 0 5px;
+    border: 2px black solid; */
+}
+.welcome small{
+    /* padding: 0 10px 0 10px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.scrollAnime{
+    /* margin: 0 10px 0 10px; */
+    height: 17px;
+    margin-top: 18px;
+    width: 80%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* background-color: #5201BD; */
+}
+.fistLoad{
+    width: 70px;
+    border-radius: 6px;
+    height: 100%;
+    /* background-color: red; */
+    /* background: linear-gradient(to-left, #1E07C0, #5201BD); */
+    background: linear-gradient(to right, #0C5FB0, #1C3627, #6808B7, #0262CC );
+    animation: load 6s infinite linear;
+}
+.secLoad{
+    width: 55px;
+    border-radius: 6px;
+    height: 100%;
+    animation: loader 6s infinite linear;
+    /* background-color: red; */
+    background: linear-gradient(to right, #0C5FB0, #1C3627, #6808B7, #0262CC );
+}
+.secLoad::before{
+    position: absolute;
+    animation: loader 6s infinite linear;
+    top: 0;
+    right: 65px;
+    content: "";
+    width: 35px;
+    background: linear-gradient(to right, #0C5FB0, #1C3627, #6808B7, #0262CC );
+    border-radius: 6px;
+    height: 100%;
+    /* background-color: red; */
+}
+#secLoad::before{
+    display: none;
+}
+@keyframes load {
+    from{
+       transform: rotate(4deg);
+       margin-left: 10px;
+    }
+    to{
+        /* background: red;
+        background: linear-gradient(to-left, yellow, blue); */
+        transform: rotate(-4deg);
+        margin-left: 0px;
+    }
+}
+@keyframes loader {
+    from{
+        margin-right: 0;
+        transform: rotate(4deg);
+    }
+    to{
+        margin-right: 10px;
+        transform: rotate(-4deg);
+    }
+}
+@media(max-width: 1000px){
+    .welcome{
+        background-color: transparent;
+    }
+    .welcomePdiv{
+        background-image: url("/public/focus3.jpg");
+    }
+}
+@media(max-width: 700px){
+    .welcomePdiv{
+        background-position: 70%;
+        background-image: url("/public/focusmedia.jpg");
+    }
+    .welcome{
+        background: rgba(5, 5, 5, 0.7);
+    }
+    .scrollAnime{
+        width: 97%;
+    }
+}

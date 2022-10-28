@@ -1,0 +1,48 @@
+.buyCoinD{
+    height: 250px;
+    width: 80%;
+    margin-top: 90px;
+    /* background-color: #19191b; */
+    background: linear-gradient(60deg, #1a1a1d, #19191b, #111113);
+    padding: 3% 0 0 5%;
+    border-radius: 9px;
+    box-shadow: 0 0 10px black;
+}
+.coinD{
+    height: 230px;
+    width: 60%;
+    line-height: 17px;
+    /* background-color: red; */
+}
+.count{
+    font-size: 50px;
+}
+.IbcBtn{
+    height: 30px;
+    width: 40px;
+    border-radius: 9px;
+    transition: 0.7s all ease-in-out;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 1px black;
+    outline: none;
+}
+.IbcBtn:hover{
+    background: linear-gradient(60deg, #292935, #02025a, #040416);
+    box-shadow: 0 0 10px rgb(4, 4, 90);
+    border: white 1px solid;
+}
+#IbcBtn{
+    margin-top: 20px;
+    width: 110px;
+    height: 35px;
+}
+@media(max-width: 650px) {
+    .buyCoinD{
+        width: 85%;
+        margin: 150px 0 0 5%;
+    }
+}

@@ -1,0 +1,143 @@
+.inpBox{
+    width: 250px;
+    height: 37px;
+    position: relative;
+    /* background-color: red; */
+}
+.color{
+    color: #1a70cc;
+}
+.welcome{
+    position: relative;
+    /* background-color: red; */
+}
+.smtext{
+    font-size: 12px;
+    line-height: 16px;
+}
+.Inp{
+    width: 250px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    height: 29px;
+    position: absolute;
+    top: 11px;
+    padding-left: 5.7px;
+    color: white;
+}
+#fa{
+    z-index: 1;
+    transition: .3s all ease-in;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 16px;
+}
+.Label{
+    transition: .9s all ease-in;
+    height: 100%;
+    width: 100%;
+    border-bottom: white 1.82px solid;
+    position: absolute;
+    top: 0;
+    /* transition: 5s all ease-in-out; */
+    font-size: 12px;
+    font-weight: lighter;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+.Label::after{
+    z-index: 0;
+    content: "";
+    background-color: black;
+    width: 35px;
+    height: 23px;
+    position: absolute;
+    top: 14px;
+    right: -6px;
+}
+.context{
+    transition: 0.5s all ease-in-out;
+    position: absolute;
+    top: 13px;
+    font-size: 14px;
+    left: 4px;
+}
+.Inp:focus + .Label, .Inp:valid + .Label{
+    border-bottom: #1a70cc 2px solid;
+}
+.Inp:focus + .Label .context, .Inp:valid + .Label .context{
+    color: #1a70cc;
+    top: 3px;
+    font-size: 11px;
+} 
+.Inp:focus + .Label #fa, .Inp:valid + .Label #fa{
+    color: #1a70cc;
+}
+/* designed logic here */
+#uidnote{
+    background-color: #060f18;
+    top: 48%;
+    line-height: 20px;
+    /* display: none; */
+    color: #1a70cc;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+    padding: 3px;
+    transition: .3s all ease-in;
+}
+#uidnote::after{
+    content: "";
+    background-color: #060f18;
+    position: absolute;
+    top: -5px;
+    left: 7px;
+    z-index: -1;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 10px;
+}
+.instruction{
+    display: block;
+}
+.offscreen{
+    display: none;
+}
+#pwdnote{
+    background-color: #060f18;
+    top: 67%;
+    line-height: 20px;
+    /* display: none; */
+    color: #1a70cc;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+    padding: 3px;
+    transition: .3s all ease-in;
+}
+.logInBtn{
+    transition: .9s all ease-in-out;
+}
+#pwdnote::after{
+    content: "";
+    background-color: #060f18;
+    position: absolute;
+    top: -5px;
+    left: 7px;
+    z-index: -1;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 10px;
+}
+.logInBtn:disabled{
+    opacity: 0.1;
+    background-color: white;
+    color: black;
+}

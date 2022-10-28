@@ -1,0 +1,74 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "ini@gmail.com",
+      "pwd": "12345",
+      "username": "@ini_Oluwa",
+      "balance": 1000
+    },
+    {
+      "username": "Burna",
+      "email": "boy@gmail.com",
+      "password": "Ww1!22345",
+      "balance": 600,
+      "id": 3
+    },
+    {
+      "email": "well@gmail.com",
+      "pwd": "Q1233!q23",
+      "username": "well",
+      "balance": 1000,
+      "id": 4
+    },
+    {
+      "username": "Nife",
+      "email": "nife@gmail.com",
+      "pwd": "Qqwe123454!",
+      "balance": "6100100100",
+      "id": 5
+    },
+    {
+      "username": "piano",
+      "email": "p@gmail.com",
+      "password": "Ww@12345",
+      "balance": 600,
+      "id": 6
+    },
+    {
+      "username": "Dave",
+      "email": "dave@gmail.com",
+      "password": "Qq!12345",
+      "balance": 1000,
+      "id": 7
+    },
+    {
+      "username": "Money",
+      "email": "money@gmail.com",
+      "password": "Qq!12345",
+      "balance": 700,
+      "id": 8
+    },
+    {
+      "email": "steven@gmail.com",
+      "pwd": "!1Qqwery",
+      "username": "Steven",
+      "balance": 1200,
+      "id": 9
+    },
+    {
+      "email": "gaaragaming01@gmail.com",
+      "pwd": "Fstcor144028$",
+      "username": "oladokun",
+      "balance": 1200,
+      "id": 10
+    },
+    {
+      "email": "sammiegeng@gmail.com",
+      "pwd": "!!234werS",
+      "username": "Samuel",
+      "balance": 1200,
+      "id": 11
+    }
+  ]
+}
